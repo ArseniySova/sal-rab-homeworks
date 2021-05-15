@@ -21,11 +21,14 @@ function parseProducts(json) {
 // Выполните функцию clearProducts - она уже написана в коде, просто вызовите ее, аргументы не требуются
 
 function renderProductsCards(json){
+    
     clearProducts();
 
-    products = parseProducts(json);
+    let products = parseProducts(json);
 
-    for (let i = 0; i < length; i += 1) {
+    let length = products.length;
+
+    for (let i = 0; i < length - 1; i += 1) {
         addProduct(products[i]);
      }
  }
